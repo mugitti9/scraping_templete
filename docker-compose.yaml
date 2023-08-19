@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+    platform: linux/amd64
+    image: # TODO:Imageのpush先をここに入れること
+    ports:
+      - "8080:8080"
+    tty: true
+    restart: always
+    command: python main.py
