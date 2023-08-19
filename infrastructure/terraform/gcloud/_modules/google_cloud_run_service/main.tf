@@ -1,6 +1,6 @@
 resource "google_cloud_run_service" "default" {
-  name     = "${var.service_name}-${var.env}"
-  location = var.location
+  name                       = "${var.service_name}-${var.env}"
+  location                   = var.location
   autogenerate_revision_name = true
 
   metadata {
